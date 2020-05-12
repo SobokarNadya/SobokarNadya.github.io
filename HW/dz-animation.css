@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "RalewayM";
+  src: url("../fonts/Raleway-Medium.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@keyframes sale{
+  0%{
+    right: 80%;
+  }
+  50%{
+    right: 0;
+    transform: scale(1.3)
+  }
+  100%{
+    right: -80%;
+  }
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+  
+}
+.clearfix{
+  clear: both;
+}
+section.banner{
+  background:url(../img/3.png) no-repeat ;
+  background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.header{
+  max-height: 200px;
+}
+
+.logo-img{
+  margin-left: 40px;
+  height:200px; 
+}
+.navigation{
+  position: relative;
+  bottom: 100px;
+  margin-left: 800px;
+}
+.list__item{
+  list-style: none;
+  display: inline;
+  margin-left: 50px;
+}
+
+.item__link{
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(22, 18, 16);
+  padding: 10px;
+  border-radius: 4px;
+  transition:  background-color 1.5s,box-shadow 1s;
+}
+.item__link:hover{
+  color: #fff;
+  box-shadow: 5px -5px 12px 6px lightblue;
+  background-color: rgba(200, 37, 134, 0.6) ;
+  transform: scale(2);
+} 
+
+.content{
+  margin: 70px 15px;
+  position: relative;
+  animation: sale 6s ease 0s infinite alternate;
+ 
+}
+
+.sale{
+  font-family: "RalewayM";
+  font-size: 200px;
+  height: 250px;
+  width: 600px;
+  border: 2px dotted;
+  padding: 25px 50px 25px 70px;
+  margin: 0 auto;
+}
+.blocks{
+  background: #f2eaee;
+  
+}
+.block{
+  float: left;
+  width: 25%;
+  margin: 12vh 4%;
+  padding: 15vh 0;
+  border: 2px solid #eee0e8;
+  transition: transform 1s, border-radius 1s, box-shadow 1s, background-color 1s;
+}
+.block:hover{
+transform: scale(1.1);
+border-radius: 4%;
+box-shadow: 0px 0px 4px 4px lightgoldenrodyellow;
+background: rgb(252, 252, 229)
+}
+
+.block-img{
+  width: 100px;
+  height: 100px;
+  padding: 0 35%;
+}
+
+.subheader{
+  padding: 40px 30%;
+  
+}
+.contens{
+  padding: 0 5px;
+  text-align: center;
+  word-spacing: 5px;
+}
+
