@@ -217,7 +217,7 @@
   top: 100px;
   left: 150px;
   z-index: 2;
-  animation: hour-hand 86.4s linear 0s infinite;
+  animation: hour-hand 86400s linear 0s infinite;
 }
 .minute-hand{
   height: 100px;
@@ -226,7 +226,7 @@
   top: 50px;
   left: 150px;
   z-index: 2;
-  animation: minute-hand 3.6s linear 0s infinite;
+  animation: minute-hand 3600s linear 0s infinite;
 }
 .second-hand{
   height: 110px;
@@ -235,7 +235,14 @@
   top: 34px;
   left: 152px;
   z-index: 2;
-  animation: second-hand 0.6s linear 0s infinite;
+  animation: second-hand 60s linear 0s infinite;
+}
+.circle{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 140px;
+  left: 142px;
 }
     </style>
 
@@ -244,7 +251,7 @@
   <img src="img/path860.png" alt="hour-hand" class='hour-hand'>
   <img src="img/path860.png" alt="hour-hand" class='minute-hand'>
   <img src="img/path860.png" alt="hour-hand" class='second-hand'>
-
+  <img src="img/circle.png" alt="circle" class="circle">
 </section>
 </body>
 </html>
