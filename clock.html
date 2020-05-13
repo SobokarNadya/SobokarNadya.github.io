@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clock</title>
+  <link rel='stylesheet' href='normalize.css'>
+</head>
+<body>
+  <style>
+    @keyframes hour-hand{
+  0%{
+    transform: rotate(0deg);
+  }
+  8.3%{
+    transform: rotate(30deg);
+    left: 162px;
+  }
+  16.6%{
+    transform: rotate(60deg);
+    left: 174px;
+    top:110px;
+  }
+  24.9%{
+    transform: rotate(90deg);
+    left: 175px;
+    top:125px;
+  }
+  33.2%{
+    transform: rotate(120deg);
+    left: 172px;
+    top:137px;
+  }
+  41.5%{
+    transform: rotate(150deg);
+    left: 162px;
+    top:144px;
+  }
+  
+  49.8%{
+    transform: rotate(180deg);
+    left: 151px;
+    top:150px;
+  }
+  58.1%{
+    transform: rotate(210deg);
+    left: 137px;
+    top:147px;
+  }
+  66.4%{
+    transform: rotate(240deg);
+    left: 128px;
+    top:137px;
+  }
+  74.4%{
+    transform: rotate(270deg);
+    left: 125px;
+    top:125px;
+  }
+  83%{
+    transform: rotate(300deg);
+    left: 128px;
+    top:113px;
+  }
+  91.3%{
+    transform: rotate(330deg);
+    left: 138px;
+    top:105px;
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes minute-hand{
+  0%{
+    transform: rotate(0deg);
+  }
+  8.3%{
+    transform: rotate(30deg);
+    left: 174px;
+    top: 58px;
+  }
+   16.6%{
+    transform: rotate(60deg);
+    left: 193px;
+    top:75px;
+  }
+  24.9%{
+    transform: rotate(90deg);
+    left: 199px;
+    top:100px;
+  }
+  33.2%{
+    transform: rotate(120deg);
+    left: 194px;
+    top:125px;
+  }
+  41.5%{
+    transform: rotate(150deg);
+    left: 175px;
+    top:142px;
+  }
+  
+  49.8%{
+    transform: rotate(180deg);
+    left: 151px;
+    top:150px;
+  }
+  58.1%{
+    transform: rotate(210deg);
+    left: 126px;
+    top:142px;
+  }
+  66.4%{
+    transform: rotate(240deg);
+    left: 107px;
+    top:125px;
+  }
+  74.4%{
+    transform: rotate(270deg);
+    left: 101px;
+    top:100px;
+  }
+  83%{
+    transform: rotate(300deg);
+    left: 107px;
+    top:76px;
+  }
+  91.3%{
+    transform: rotate(330deg);
+    left: 125px;
+    top:57px;
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+} 
+@keyframes second-hand{
+  0%{
+    transform: rotate(0deg);
+  }
+  8.3%{
+    transform: rotate(30deg);
+    left: 179px;
+    top: 47px;
+  }
+  16.6%{
+    transform: rotate(60deg);
+    left: 198px;
+    top:69px;
+  }
+  24.9%{
+    transform: rotate(90deg);
+    left: 208px;
+    top: 94px;
+  }
+  33.2%{
+    transform: rotate(120deg);
+    left: 199px;
+    top:122px;
+  }
+  41.5%{
+    transform: rotate(150deg);
+    left: 178px;
+    top:142px;
+  }
+  
+  49.8%{
+    transform: rotate(180deg);
+    left: 151px;
+    top:150px;
+  }
+  58.1%{
+    transform: rotate(210deg);
+    left: 124px;
+    top:142px;
+  }
+  66.4%{
+    transform: rotate(240deg);
+    left: 103px;
+    top:123px;
+  }
+  74.4%{
+    transform: rotate(270deg);
+    left: 97px;
+    top:96px;
+  }
+  83%{
+    transform: rotate(300deg);
+    left: 104px;
+    top:68px;
+  }
+  91.3%{
+    transform: rotate(330deg);
+    left: 125px;
+    top:48px;
+  }
+  100%{
+    transform: rotate(360deg);
+  } 
+} 
+
+.clock-section{
+  position: relative;
+  margin: 20vh 35vw;
+}
+.clock{
+  height: 300px;
+  
+  z-index: 1;
+}
+.hour-hand{
+  height: 50px;
+  width: 3px;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  z-index: 2;
+  animation: hour-hand 86.4s linear 0s infinite;
+}
+.minute-hand{
+  height: 100px;
+  width: 3px;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  z-index: 2;
+  animation: minute-hand 3.6s linear 0s infinite;
+}
+.second-hand{
+  height: 110px;
+  width: 1px;
+  position: absolute;
+  top: 34px;
+  left: 152px;
+  z-index: 2;
+  animation: second-hand 0.6s linear 0s infinite;
+}
+    </style>
+
+<section class="clock-section">
+  <img src="img/clock3.png" alt="clock" class='clock'>
+  <img src="img/path860.png" alt="hour-hand" class='hour-hand'>
+  <img src="img/path860.png" alt="hour-hand" class='minute-hand'>
+  <img src="img/path860.png" alt="hour-hand" class='second-hand'>
+
+</section>
+</body>
+</html>
