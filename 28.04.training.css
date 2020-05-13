@@ -1,0 +1,78 @@
+
+ p{
+     color:green;
+ }
+.text{
+    color:red;
+}
+p.text{
+    color:blue;
+}
+
+li{
+    color:green;
+}
+ol li{
+    color:brown;
+}
+.list li{
+    color:red
+}
+
+article h2{
+    color:red;  
+}
+
+article>h2{
+    color:blue;
+}
+
+
+/* a[href*="google"]{
+    color:purple;
+}
+a[href="http://google.com"]{
+    color:orange;
+}
+a[target]{
+    color:green;
+} */
+a{
+    font-style:bolder;
+}
+a:link{
+    color:red;
+}
+a:hover{
+    color:royalblue;
+    background: fuchsia;
+}
+/* a:visited{
+    color:rgb(252, 214, 0);} */
+
+.point{
+    color:red;
+    background: yellow;
+}
+
+.point:before{
+    content:'*'
+}
+.point:after{
+    content:'$'
+}
+
+.text{
+    color:peru;
+    background:blue;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-family: Arial, sans-serif;
+    font-style:italic;
+    font-weight: normal;
+}

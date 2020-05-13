@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "RalewayRegular";
+    src: url("../fonts/RalewayRegular/RalewayRegular.eot");
+    src: url("../fonts/RalewayRegular/RalewayRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"),
+    url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.banner{
+    background-color: aquamarine;
+    text-align: center;
+    background-image: url(img/1.jpg);
+    background-repeat: no-repeat;
+    /* background-position: 100px 100px; */
+    background-size: cover;
+    /* background-attachment: fixed;
+    background-origin: border-box; */
+    padding: 100px;
+    min-height: 300px;
+}
+i{
+font-size:40px;
+text-align:center;
+}
+
+.img{
+   float: left;
+   max-width: 100%; 
+   height: 205px;
+}
+
+.clearfix{
+    clear:both;
+}
+
+.container:after{
+    content:'';
+    display: block;
+    clear: both;
+
+}
+
+
+
+.box div{
+    width: 200px;
+    height: 200px;
+    background: grey;
+    margin: 0 auto;
+}
+.box__inner_1{
+    position: relative;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 20px;
+    background: red;
+}
+.box:nth-child(2){
+    position: relative;
+    background: green;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+div.box__inner_2{
+background: yellow;
+position: absolute;
+bottom:50px;
+right:50px;
+}
+
+div.box__inner_3{
+    background: blue;
+    position: fixed;
+    top:20vh;
+    left: 10vw;
+}
+div.box__inner_4{
+background: brown;
+position: sticky;
+top: 50px;
+
+}
+
+.block_outer{
+    position: relative;
+}
+
+.block_1{
+    width: 300px;
+    height: 300px;
+    background: cyan;
+    position: absolute;
+
+    z-index:2;
+
+}
+
+.block_2{
+    width: 200px;
+    height: 200px;
+    background: darkorange; 
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.block_3{
+    width: 100px;
+    height: 100px;
+    background: darkmagenta;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+    z-index: -1;
+}
+.hover-outer{
+    margin-bottom: 20px;
+}
+
+.hover-div{
+    width: 150px;
+    height: 150px;
+    background: red;
+    float: left;
+    margin: 10px;
+}

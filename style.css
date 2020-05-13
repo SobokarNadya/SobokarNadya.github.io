@@ -1,0 +1,158 @@
+
+@font-face {
+    font-family: "Arial";  
+    src: url("fonts/ArialRegular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+     
+@font-face{
+    font-family: "ArialBold";
+    src: url("fonts/ArialBold.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
+i{
+    font-size: 40px;
+    text-align: center;
+}
+
+.banner{
+    color: white;
+    text-align: center;
+    background-color: salmon;
+    background-image: url(img/img.jpg);
+    background-repeat: no-repeat;
+    /* background-position: 100px ; */
+    background-size: cover;
+    /* background-attachment: fixed;
+    background-origin: border-box; */
+    padding: 100px;
+    min-height: 30vh;
+}
+
+.img{
+    float: left;
+    max-width: 33%;
+    height: 210px;
+}
+
+
+.clearfix{
+    clear: both;
+}
+
+.container:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+/* position  relative absolute  fixed  static  sticky*/
+
+.box div {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background: grey;
+}
+
+.box__inner_1{
+    background: red;
+    /* относительно себя */
+    position: relative; 
+    top: 10px;
+    /* bottom: 10px; */
+    left: 10px;
+    /* right: 20px; */
+}
+
+.box:nth-child(2) {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    background: green;
+}
+div.box__inner_2 {
+    background: yellow;
+    /* относительно родителя, у которого есть relative, fixed */
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+div.box__inner_3{
+    background: blue;
+    /* относительно экрана */
+    /* position: fixed; */
+    top: 50vh;
+    left: 10vw;
+}
+
+div.box__inner_4{
+    background: brown;
+    /* липкое позиционирование */
+    /* position: sticky;
+    top: 50px; */
+}
+
+/* z-index 1 2 3 100000  relative absolute fixed */
+
+
+
+/* relative absolute */
+
+.block_outer{
+    position: relative;
+    /* margin-bottom: 500px; */
+}
+.block_1 {
+    width: 300px;
+    height: 300px;
+    background: cyan;
+    position: absolute;
+    /* position: relative;
+    left: 300px; */
+
+
+   z-index: 3;
+}
+.block_2 {
+    width: 200px;
+    height: 200px;
+    background: darkmagenta;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    /* position: relative;
+    left: 350px;
+    bottom: 200px; */
+    z-index: 2;
+}
+.block_3 {
+    width: 100px;
+    height: 100px;
+    background: darkorange;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* position: relative;
+    left: 400px;
+    bottom: 300px; */
+    z-index: 1;
+}
+
+.hover-outer{
+    margin-bottom: 500px;
+}
+
+.hover-div{
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin: 10px;
+    float: left;
+}
+
+

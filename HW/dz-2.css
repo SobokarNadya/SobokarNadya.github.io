@@ -1,12 +1,11 @@
  @font-face {
     font-family: "RalewayRegular";
-    src: url("..//fonts/RalewayRegular/RalewayRegular.eot");
-    src: url("..//fonts/RalewayRegular/RalewayRegular.eot?#iefix")format("embedded-opentype"),
-    url("..//fonts/RalewayRegular/RalewayRegular.woff") format("woff"),
-    url("..//fonts/RalewayRegular/RalewayRegular.ttf") format("truetype");
+    src: url("../fonts/Raleway-Regular.ttf");
+    
     font-style: normal;
     font-weight: normal;
 }
+
 
 @font-face {
     font-family: "RalewayThin";
@@ -39,8 +38,7 @@
     line-height: 2em;
 }
 
-
-header, footer{ 
+.roof, .basement{ 
     background: #b9a195;
     padding: 5vh;
 }
@@ -53,7 +51,7 @@ section{
     padding:10vh 10vw;
     border: 2px dotted #765b58;
 }
-a{
+.navigation__elem-link{
     padding:15px;
 }
 a:hover{
@@ -74,9 +72,10 @@ a:hover{
     padding: 50px;
 }
 
-li{
+.navigation__elem{
     display: inline;
     margin: 0 30px;
     list-style-type: none;
 }
+
 
