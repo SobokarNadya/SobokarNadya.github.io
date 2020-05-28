@@ -1,0 +1,59 @@
+@charset "UTF-8";
+.list-item1:after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  display: block;
+  font-size: 14px;
+  color: red;
+  position: absolute;
+  top: 18px;
+  left: 55px;
+}
+
+.list-item2 {
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+  color: lightseagreen;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+
+.list-item3__link {
+  text-decoration: none;
+  color: orange;
+  font-family: Sans-Serif;
+  font-size: 1 15px;
+  font-weight: bolder;
+}
+
+.form {
+  padding: 10px;
+}
+.form input[type=file] {
+  display: none;
+}
+.form .label {
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 10px 10px 50px;
+  color: gray;
+}
+.form .label:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  display: block;
+  font-size: 30px;
+  color: gray;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/*# sourceMappingURL=mixin.css.map */
