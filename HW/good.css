@@ -790,6 +790,9 @@ footer{
     background: none;
     align-self: normal;
   }
+  .banner-txt{
+    margin-bottom: 10px;
+  }
   .card{
     width: 65%;
   }
