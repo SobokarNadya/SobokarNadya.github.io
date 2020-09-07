@@ -1,4 +1,0 @@
-1. Подключить шрифты Raleway, Raleway двумя способами: скачать и подключить в css; с помощью тега link
-2. Используя методологию БЭМ, присвоить классы всем тегам в html документе. (https://ru.bem.info/methodology/quick-start/)
-3. Стилизовать html документ, используя изученные свойства. 
-Обязательно использовать width, height, max-width, min-width, border, font, margin, padding, nth-child, относительные величины.
